@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <link rel="icon" href="images/logo-project1c.png" size="16x16"/>
+  
+  <title> Codepart - Webdesign </title>
+</head>
+
+<body>
+  <!-- Begin Container -->
+  <div id="container">
+
+    <header>
+      <div id="logo">
+        
+        <img src="images/logo-project1c.png" alt="codepart logo">
+      
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="portfolio1a.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="links.html">LINKS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images  -->
+      <div class="mySlides fade">
+        <img src="images/web_design1.jpg" alt="web_design_responsive">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/web_design2.jpg" alt="web_design_picture2">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/web_design3a.jpg" alt="web_design_picture3">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/web-design3.jpg" alt="web_design_picture4">
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div> <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div> <br>
+
+    <section>
+      <div class="cta">
+        <a href="about.html">
+        <h2>Working with passion to deliver the best for You!</h2>
+        </a>
+      </div>
+      <div class="cta">
+        <a href="contact.html">
+        <h2>Do you want us to build a bold, beautiful, and accessible website ?</h2>
+        </a>
+      </div>
+      <div class="cta">
+        <a href="portfolio.html">
+         <h2>Take a look at the designs that we have created.</h2>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-box">
+        <h2>Address:</h2>
+        <address>
+          <span title="Find us:">
+        
+           <p>
+            Daintree Building<br>
+            62 Pleasants<br>
+            Dublin
+          </p>
+          </span>
+        </address>
+
+        <h2>Phone:</h2>
+        <span title="Call us:">
+        <p>(0040)745930504</p>
+        </span>
+  
+      </div>
+
+      <div class="footer-box">
+        <a href="contact.html"><button class="btn">START YOUR PROJECT</button></a>
+        <a class="design" title="email me:" href="mailto:iiostefanos@gmail.com"><h5 title="Design by StefanoS"> Design by StefanoS</h5></a>
+        <h6 title="&copy; All rights reserved">&copy; Codepart 2018</h6>
+      </div>
+
+      <div class="footer-box" id="footer-social">
+        <h2 title="Follow us:">Follow:</h2>
+        <p>
+          <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" class="social-icon" alt="Facebook" /></a>
+          <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter.png" class="social-icon" alt="Twitter"/></a>
+          <a href="https://plus.google.com/discover" target="_blank"><img src="images/google.png" class="social-icon" alt="Google plus"/></a>
+          <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/instagram.png" class="social-icon" alt="Instagram"/></a>
+        </p>
+
+        <h2>Email:</h2>
+        <span title="email us:">
+          <a class="email-link" href="mailto:codepart@gmail.com">codepart@gmail.com</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+  <!-- End Container -->
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+
+</body>
+
+</html>

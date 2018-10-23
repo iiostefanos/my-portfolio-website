@@ -1,0 +1,460 @@
+body {
+  font-family: Sitka, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 1024px;
+  margin: auto;
+}
+
+p {
+  font-size: 1em;
+  font-style: normal;
+}
+
+h3 {
+  color: #b9519f;
+}
+
+hr {
+  background-color: #b9519f;
+  width: 100%;
+  height: 5px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+
+}
+
+
+/* Header start */
+
+header {
+  background-color: #aca8a8;
+  width: auto;
+  height: 220px;
+  padding: 0px;
+
+}
+
+#logo {
+  position: relative;
+  float: left;
+  top: 40px;
+  left: 40px;
+}
+
+#logo img {
+  width: 75%;
+  margin-top: 14px;
+  margin-left: 8px;
+}
+
+/* Header end */
+
+/* navigation */
+
+nav {
+  display: inline-block;
+  width: 700px;
+  text-align: right;
+  float: right;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 100px 30px 0 0;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 30px;
+  font-family: Myriad Pro, sans-serif;
+  font-weight: bold;
+  padding: 5px;
+
+}
+
+nav a {
+  font-size: 17px;
+  color: #b9519f;
+  padding: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #b9519f;
+  background: black;
+  padding: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+nav a:active {
+  background-color: #b9519f;
+  color: white;
+
+}
+
+/* navigation end */
+
+/* Slideshow start */
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -12px;
+  padding: 14px;
+  color: #b9519f;
+  font-weight: bold;
+  font-size: 4em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #b9519f;
+}
+
+/* Fading animation */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* Slideshow end */
+
+/* Body area - Call to action */
+
+.cta {
+  border-top: 5px solid #b9519f;
+  background-color: #aca8a8;
+  height: 95px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+
+}
+.cta:hover {
+  border-top: 5px solid #aca8a8;
+  background-color: #b9519f;
+  height: 95px;
+  text-align: center;
+  margin-bottom: 20px;
+  
+
+}
+
+.cta h2 {
+  text-align: center;
+  margin: 35px 0;
+  color: black;
+}
+
+/* Body area end */
+
+/* Footer area */
+
+footer {
+  background-color: #aca8a8;
+  height: 258px;
+  padding: 12px;
+  clear: left;
+}
+
+.btn {
+  background-color: black;
+  border: none;
+  font-size: 24px;
+  font-family: Sitka, sans-serif;
+  color: #b9519f;
+  width: 340px;
+  height: 105px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn:hover {
+    background-color: #b9519f;
+    color: black;
+}
+
+.footer-box {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  height: 270px;
+  text-align: center;
+}
+
+.footer-box button {
+  margin-top: 50px;
+}
+
+img.social-icon {
+  width: 54px;
+  height: 54px;
+}
+
+
+
+.email-link {
+  text-decoration: none;
+  color: #b9519f;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-box p {
+  color: #b9519f;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h5 {
+  margin-top: 52px;
+  color: black;
+}
+h6 {
+  margin-top:3px;
+  
+}
+
+
+/* About page content style */
+
+
+
+.content-box {
+  background-color: white;
+  color: black;
+}
+
+.color-style {
+  font-size: 72px;
+  text-align: center;
+  font-family: Sitka, sans-serif;
+  font-weight: bold;
+  color: #b9519f;
+  
+}
+
+
+.text p {
+  margin: 5px 45px 5px 40px;
+  font-weight: 500;
+} 
+
+.image {
+  width: 49%;
+  display: inline-block;
+}
+
+.text {
+  width: 49%;
+  float: right;
+  display: inline-block;
+}
+
+#content-div {
+  padding-bottom: 40px;
+}
+
+.gallery {
+  margin: 7px;
+  border: 3px solid black;
+  float: left;
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  filter: grayscale(100%);
+
+}
+
+.gallery:hover {
+  background-color: #b9519f;
+  filter: grayscale(0);
+  border: 3px solid #b9519f;
+
+
+}
+
+img {
+  width: 100%;
+
+}
+
+
+.desc {
+  padding: 10px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.image-logo {
+  width: 13%;
+  display: inline-block;
+  margin-left: 7px;
+  filter: grayscale(100%);
+}
+
+.image-logo:hover {
+  width: 13%;
+  display: inline-block;
+  margin-left: 7px;
+  margin-right: 7px;
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+#big {
+  width: 157px;
+  height: auto;
+}
+
+.logo-style, .site-style {
+  font-size: 36px;
+  text-align: center;
+  font-family: Sitka, sans-serif;
+  font-weight: bold;
+  color: #b9519f;
+} 
+
+/*Contact page*/
+ /* Style inputs with type="text", select elements and textareas */
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #b9519f;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+     
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+    background-color: black;
+    color: #b9519f;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+} 
+
+#modify {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #b9519f;
+}
+
+#subject {
+  height:200px;
+}
+
+#change {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
